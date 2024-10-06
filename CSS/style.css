@@ -1,0 +1,159 @@
+:root {
+    --primario: rgb(249,251,252);
+    --primarioOscuro: rgb(221,232,238);
+    --secundario: rgb(124, 126, 128);
+    --white: #fff;
+    --black: #000;
+
+    --fuentePrincipal: "Staatliches", sans-serif;
+    --fuenteSecundaria: "Quicksand", sans-serif;
+}
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1rem = 10px */
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* Globales */
+body{
+    background-color: var(--primarioOscuro);
+    font-size: 1.6rem;
+    line-height: 1.5;
+    margin: 0; 
+}
+
+p{
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--black);
+}
+
+a{
+    text-decoration: none;
+    color: var(--white);
+}
+
+img{
+    max-width: 100%;
+}
+
+/* Contenedor padre de .header__logo */
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+/* .header__logo */
+.header__logo {
+    display: flex;
+    justify-content: center;
+    margin: 0.5rem 0;
+    width: 30rem; /* Ajusta el tamaño según tus preferencias */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+/* footer */
+.footer {
+    background-color: var(--secundario);
+    margin-top: 1rem;
+    padding: 1rem 0;
+}
+
+.footer__texto{
+    color: var(--white);
+    text-align: center;
+    font-size: 2.2rem;
+}
+
+/* Navegación */
+.navegacion {
+    background-color: var(--secundario);
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.navegacion__enlace{
+    font-family: var(--fuenteSecundaria);
+    font-size: 2rem;
+}
+
+.navegacion__enlace--activo,
+.navegacion__enlace:hover{
+    color: var(--black);
+}
+
+/* Estilo del contenedor principal en <main> */
+.contenedor {
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    margin: 2rem auto; /* Espacio arriba y abajo, centrado automático */
+    padding: 2rem;     /* Espacio interno */
+    background-color: var(--primario); /* Color de fondo del recuadro */
+    border-radius: 0.5rem; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra alrededor */
+}
+/* Ajustes para el container */
+/* .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;  
+    margin: 1.8rem auto;
+    height: 100vh;
+    background-color: var(--primario);
+}  */
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    font-family: var(--fuentePrincipal);
+    color: var(--black);
+    margin: 0;
+}
+
+.contenedor h1{
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 4rem;
+}
+h2{
+    font-size: 3.2rem;
+}
+h3{
+    font-size: 2.4rem;
+}
+
+/* .left-rectangle, .right-rectangle {
+    width: 15%;
+    height: 100%;
+    background-color: var(--primarioOscuro); /* Color de los rectángulos 
+} */
+
+/*grid*/
+.grid {   
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+
+/* productos */
+.producto {
+    
+}
+.producto__imagen {
+
+}
+.producto__informacion{
+
+}
+.producto__nombre{
+
+}
+.producto__precio{
+
+}
