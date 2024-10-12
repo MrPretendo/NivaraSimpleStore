@@ -14,35 +14,70 @@
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 
         <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html">
+            <img class="header__logo" src="img/logo.png" alt="Logotipo">
+        </a>
+    </header>
 
-    </head>
-        <body>
-            <header class ="header"> 
-                <a href="index.html"></a>
-                    <img class ="header__logo" src="img/logo.png" alt="logotipo">    
-            </header>
+    <nav class="navegacion">
+        <a class="navegacion__enlace navegacion__enlace--activo" href="index.html">Inicio</a>
+        <a class="navegacion__enlace" href="tienda.html">Tienda</a>
+        <a class="navegacion__enlace" href="nosotros.html">Nosotros</a>
+    </nav>
 
-            <nav class ="navegacion">
-                    <a class="navegacion__enlace navegacion__enlace--activo" href=#>Inicio</a>
-                    <a class="navegacion__enlace" href="tienda.html">Tienda</a>
-                    <a class="navegacion__enlace" href="nosotros.html">Nosotros</a>
-            </nav>
-    
-            <main class="contenedor">
-                <h1> Bienvenidos </h1>
+    <main class="contenedor">
+        <h1>Bienvenidos a Nivara</h1>
+        
+        <div class="hero">
+            <img src="img/grafico2.jpg" alt="Imagen principal" class = "imgPrincipal">
+            <img src="img/nosotros.jpg" alt="Imagen principal 2" class = "imgPrincipal2">
+        </div>
 
+        <section class="productos-destacados">
+            <h2>Productos Destacados</h2>
+            <div class="grid">
+                <div class="producto">
+                    <a href="producto.html">
+                        <img class="producto__imagen" src="img/3.jpg" alt="imagen camisa">
+                        <div class="producto__informacion">
+                            <p class="producto__nombre">React JS</p>
+                            <p class="producto__precio">$420</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="producto">
+                    <a href="producto.html">
+                        <img class="producto__imagen" src="img/4.jpg" alt="imagen camisa">
+                        <div class="producto__informacion">
+                            <p class="producto__nombre">Redux</p>
+                            <p class="producto__precio">$666</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="producto">
+                    <a href="producto.html">
+                        <img class="producto__imagen" src="img/5.jpg" alt="imagen camisa">
+                        <div class="producto__informacion">
+                            <p class="producto__nombre">Node JS</p>
+                            <p class="producto__precio">$69</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
 
+        <section class="nosotros-resumen">
+            <h2>Sobre Nosotros</h2>
+            <p>En Nivara, nos dedicamos a ofrecer la mejor ropa para desarrolladores. Nuestras prendas combinan estilo y comodidad, perfectas para largas sesiones de codificación.</p>
+            <a href="nosotros.html" class="boton">Conoce más</a>
+        </section>
+    </main>
 
-            </main>
-
-<!--        <div class="container">
-                <div class="left-rectangle"></div>
-                <div class="right-rectangle"></div>
-            </div> -->
-
-            <footer class="footer">
-                <p class="footer__texto">Todos los derechos reservados &copy;</p>
-            </footer>
-
-        </body>
+    <footer class="footer">
+        <p class="footer__texto">Nivara - Todos los derechos Reservados 2024.</p>
+    </footer>
+</body>
 </html>

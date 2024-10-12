@@ -139,6 +139,75 @@ h3{
     background-color: var(--primarioOscuro); /* Color de los rectángulos 
 } */
 
+/* Estilos adicionales para index.html */
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem; /* Espacio entre las imágenes */
+    margin-bottom: 2rem;
+    flex-wrap: wrap; /* Permite que las imágenes se apilen en pantallas pequeñas */
+}
+
+.hero img {
+    max-width: 45%; /* Ajusta esto según tus necesidades */
+    height: 30rem;
+    object-fit: cover; /* Mantiene la proporción de la imagen */
+}
+
+.productos-destacados {
+    margin-bottom: 4rem;
+}
+
+.productos-destacados h2 {
+    margin-bottom: 2rem;
+}
+
+.nosotros-resumen {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--primarioPocoOscuro);
+    margin-top: 4rem;
+}
+
+.nosotros-resumen h2 {
+    margin-bottom: 1rem;
+}
+
+.nosotros-resumen p {
+    margin-bottom: 2rem;
+}
+
+.boton {
+    background-color: var(--secundario);
+    color: var(--white);
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.boton:hover {
+    background-color: var(--secundarioClaro);
+}
+
+@media (max-width: 768px) {
+    .hero img {
+        max-width: 100%; /* En pantallas pequeñas, las imágenes ocupan todo el ancho */
+    }
+}
+
+@media (min-width: 768px) {
+    .productos-destacados .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+
 /*grid*/
 .grid {   
     display: grid;
